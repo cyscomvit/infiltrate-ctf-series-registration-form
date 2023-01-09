@@ -9,6 +9,8 @@ virtualenv
 *.venv
 credentials.json
 *.json
+*.csv
+CTFregistrations.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

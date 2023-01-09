@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./../static/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <img src="https://cyscomvit.com/assets/images/logo.png" class="logo" />
+        {% if yet_to_register %}
+        <div class="form-container">
+            <form action="{{ url_for('data') }}" method="post" class="ctf-form">
+                <h1 class="form-title">CAPTURE THE FLAG</h1>
+                <input class="form-input" type="text" placeholder="Full Name*" required id="Name" name="Name" />
+                <input class="form-input" type="text" placeholder="Registration number*" id="Regno" name="Regno" />
+                <input class="form-input" type="email" placeholder="Your Email*" required id="Email" name="Email" />
+                <input class="form-input" type="tel" placeholder="Enter your Phone Number*" required id="Phone" name="Phone" />
+                <textarea class="form-input" placeholder="Why do you want to attend the CTF ?" cols="30" rows="10" id="Message" name="Message"></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        {% endif %}
+        {% if filled %}
+            <div class="show-message">
+              <p class="show-message-p">{{ show_message }}</p>
+          </div>
+        </div>
+        {% endif %}
+    </body>
+</html>
