@@ -98,4 +98,4 @@ def data():
 
 if __name__ == "__main__":
     load_dotenv(".env")
-    app.run(debug=bool(os.getenv("DEBUG")))
+    app.run(debug=bool(os.getenv("DEBUG")),host='0.0.0.0')
