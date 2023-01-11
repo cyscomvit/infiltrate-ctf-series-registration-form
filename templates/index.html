@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=no" />
         <link rel="stylesheet" href="./../static/css/style.css" />
-        <title>CTF Registration</title>
+        <title>Infiltrate - The CTF Series by CYSCOM VIT</title>
     </head>
     <body>
         {% if yet_to_register %}
         <div class="form-container">
                 <form action="{{ url_for('data') }}" method="post" class="ctf-form">
-                    <h1 class="form-title">CTF Session Registration</h1>
+                    <h1 class="form-title">Register for Infiltrate - The CTF Series by CYSCOM VIT</h1>
                     <div class="match">
                     <input class="form-input" type="text" placeholder="Name" name="Name" id="name" required/>
                     <input class="form-input" type="text" placeholder="Registration Number" name="Regno" id="regno" maxlength="9" required/>
@@ -33,5 +33,19 @@
         </div>
     </div>
         {% endif %}
+        <div class="perma">
+            <p>Venue - <b>AB1 205B</b> | Timings - <b>Wednesdays (12:00 PM - 01:00 PM)</b></p>
+            <p>Join our <a href="https://discord.gg/s2BAASguh5">Discord</a> server and get the "Verified" and the "CTF Ping" roles to be informed of our CTF sessions.</p>
+            <p>If you have any doubts, <a id="wlink">contact our student co-ordinator Nishchhal on discord</a></p>
+        </div>l
+        <script>
+                const d = "htt" + "ps" + "://" + "w" + "a.me/";
+                const dstring = ["9" + "1" + "987" + "36" + "8" + "467" + "1"]
+                const n = "contact our student co-ordinator Nishchhal"
+                wlink = document.getElementById("wlink");
+                wlink.href = d +  dstring[0]
+                wlink.innerContent = n;
+                // console.log( '<a href="' + d +  dstring[0] + '">' + n + "<" + "a>");
+        </script>
     </body>
 </html>
