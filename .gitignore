@@ -11,6 +11,7 @@ credentials.json
 *.json
 *.csv
 CTFregistrations.csv
+pyvenv.cfg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
