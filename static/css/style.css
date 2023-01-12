@@ -57,6 +57,10 @@ p {
     margin-bottom: 2rem;
 }
 
+.form-title{
+    text-align: center;
+}
+
 input,
 textarea {
     opacity: 90%;
