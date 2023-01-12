@@ -57,7 +57,7 @@ p {
     margin-bottom: 2rem;
 }
 
-.form-title{
+.form-title {
     text-align: center;
 }
 
@@ -78,7 +78,8 @@ textarea:focus {
     border-color: #243b55;
 }
 
-button, a {
+button,
+a {
     padding: 10px 30px;
     border-radius: 5px;
 }
@@ -116,11 +117,11 @@ button, a {
     justify-content: center;
 }
 
-.perma > p{
+.perma > p {
     font-size: 1rem;
     text-align: center;
 }
-.perma > p > a{
+.perma > p > a {
     padding: 0rem;
-    border-radius: 0rem
+    border-radius: 0rem;
 }
